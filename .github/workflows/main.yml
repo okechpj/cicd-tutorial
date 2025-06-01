@@ -22,7 +22,7 @@ jobs:
 
     - name: Run tests
       run: |
-        pytest --cov=app tests/
+        PYTHONPATH=. pytest --cov=app tests/
 
     - name: Check code formatting
       run: |
